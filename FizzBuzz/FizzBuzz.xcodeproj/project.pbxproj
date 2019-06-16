@@ -87,14 +87,11 @@
 		46DD68A922B640C3006ACB82 /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
-				46DD68AA22B640C3006ACB82 /* AppDelegate.swift */,
-				46DD68AC22B640C3006ACB82 /* ViewController.swift */,
-				46DD68CF22B64AC0006ACB82 /* FizzBuzzUseCase.swift */,
-				46DD68D322B64E1E006ACB82 /* FizzBuzzPresenter.swift */,
-				46DD68AE22B640C3006ACB82 /* Main.storyboard */,
-				46DD68B122B640C5006ACB82 /* Assets.xcassets */,
-				46DD68B322B640C5006ACB82 /* LaunchScreen.storyboard */,
-				46DD68B622B640C5006ACB82 /* Info.plist */,
+				46DD68DC22B6629A006ACB82 /* Main */,
+				46DD68D922B66274006ACB82 /* UI */,
+				46DD68DA22B66288006ACB82 /* Business Logic */,
+				46DD68DB22B66290006ACB82 /* Presenter */,
+				46DD68DD22B662A9006ACB82 /* Supporting Files */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -102,13 +99,88 @@
 		46DD68BE22B640C6006ACB82 /* FizzBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
-				46DD68C122B640C6006ACB82 /* Info.plist */,
-				46DD68CD22B6490B006ACB82 /* FizzBuzzUseCaseTests.swift */,
-				46DD68D122B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift */,
-				46DD68CA22B64529006ACB82 /* FizzBuzzViewControllerTests.swift */,
-				46DD68D722B653F7006ACB82 /* AppdelegateTests.swift */,
+				46DD68DE22B662D9006ACB82 /* Main */,
+				46DD68DF22B662E0006ACB82 /* Business Logic */,
+				46DD68E022B662E9006ACB82 /* Presenter */,
+				46DD68E122B662F2006ACB82 /* UI */,
 			);
 			path = FizzBuzzTests;
+			sourceTree = "<group>";
+		};
+		46DD68D922B66274006ACB82 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				46DD68AE22B640C3006ACB82 /* Main.storyboard */,
+				46DD68AC22B640C3006ACB82 /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		46DD68DA22B66288006ACB82 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				46DD68CF22B64AC0006ACB82 /* FizzBuzzUseCase.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		46DD68DB22B66290006ACB82 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46DD68D322B64E1E006ACB82 /* FizzBuzzPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46DD68DC22B6629A006ACB82 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				46DD68AA22B640C3006ACB82 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		46DD68DD22B662A9006ACB82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46DD68B122B640C5006ACB82 /* Assets.xcassets */,
+				46DD68B322B640C5006ACB82 /* LaunchScreen.storyboard */,
+				46DD68B622B640C5006ACB82 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46DD68DE22B662D9006ACB82 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				46DD68C122B640C6006ACB82 /* Info.plist */,
+				46DD68D722B653F7006ACB82 /* AppdelegateTests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		46DD68DF22B662E0006ACB82 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				46DD68CD22B6490B006ACB82 /* FizzBuzzUseCaseTests.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		46DD68E022B662E9006ACB82 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46DD68D122B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46DD68E122B662F2006ACB82 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				46DD68CA22B64529006ACB82 /* FizzBuzzViewControllerTests.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,7 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78BZCUCGN3;
-				INFOPLIST_FILE = FizzBuzz/Info.plist;
+				INFOPLIST_FILE = "FizzBuzz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78BZCUCGN3;
-				INFOPLIST_FILE = FizzBuzz/Info.plist;
+				INFOPLIST_FILE = "FizzBuzz/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
