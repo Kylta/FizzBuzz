@@ -70,7 +70,7 @@ class FizzBuzzViewControllerTest: XCTestCase {
 
     private func makeSUT() -> FizzBuzzViewController {
         let sut = sb.instantiateInitialViewController() as! FizzBuzzViewController
-        sut.loadView()
+        sut.loadViewIfNeeded()
         return sut
     }
 }

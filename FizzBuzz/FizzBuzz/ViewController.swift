@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class FizzBuzzViewController: UIViewController {
+final class FizzBuzzViewController: UIViewController, FizzBuzzPresenterOutput {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var reloadButton: UIButton!
@@ -33,7 +33,7 @@ final class FizzBuzzViewController: UIViewController {
     }
 }
 
-extension FizzBuzzViewController: FizzBuzzPresenterOutput {
+extension FizzBuzzViewController {
     func present(_ fizzBuzz: FizzBuzzViewModel) {
         label.text = fizzBuzz.value
     }
