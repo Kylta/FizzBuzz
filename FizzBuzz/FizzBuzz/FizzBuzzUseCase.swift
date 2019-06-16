@@ -9,7 +9,11 @@
 import Foundation
 
 public struct FizzBuzzData {
-    let value: Int
+    public let value: Int
+
+    public init(value: Int) {
+        self.value = value
+    }
 }
 
 public protocol CalculFizzBuzzOutput {

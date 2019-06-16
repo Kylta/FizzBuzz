@@ -15,6 +15,8 @@
 		46DD68CB22B64529006ACB82 /* FizzBuzzViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68CA22B64529006ACB82 /* FizzBuzzViewControllerTests.swift */; };
 		46DD68CE22B6490B006ACB82 /* FizzBuzzUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68CD22B6490B006ACB82 /* FizzBuzzUseCaseTests.swift */; };
 		46DD68D022B64AC0006ACB82 /* FizzBuzzUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68CF22B64AC0006ACB82 /* FizzBuzzUseCase.swift */; };
+		46DD68D222B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68D122B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift */; };
+		46DD68D422B64E1E006ACB82 /* FizzBuzzPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68D322B64E1E006ACB82 /* FizzBuzzPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		46DD68CA22B64529006ACB82 /* FizzBuzzViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzViewControllerTests.swift; sourceTree = "<group>"; };
 		46DD68CD22B6490B006ACB82 /* FizzBuzzUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUseCaseTests.swift; sourceTree = "<group>"; };
 		46DD68CF22B64AC0006ACB82 /* FizzBuzzUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUseCase.swift; sourceTree = "<group>"; };
+		46DD68D122B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzDataPresenterTests.swift; sourceTree = "<group>"; };
+		46DD68D322B64E1E006ACB82 /* FizzBuzzPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 				46DD68AA22B640C3006ACB82 /* AppDelegate.swift */,
 				46DD68AC22B640C3006ACB82 /* ViewController.swift */,
 				46DD68CF22B64AC0006ACB82 /* FizzBuzzUseCase.swift */,
+				46DD68D322B64E1E006ACB82 /* FizzBuzzPresenter.swift */,
 				46DD68AE22B640C3006ACB82 /* Main.storyboard */,
 				46DD68B122B640C5006ACB82 /* Assets.xcassets */,
 				46DD68B322B640C5006ACB82 /* LaunchScreen.storyboard */,
@@ -97,6 +102,7 @@
 			children = (
 				46DD68C122B640C6006ACB82 /* Info.plist */,
 				46DD68CD22B6490B006ACB82 /* FizzBuzzUseCaseTests.swift */,
+				46DD68D122B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift */,
 				46DD68CA22B64529006ACB82 /* FizzBuzzViewControllerTests.swift */,
 			);
 			path = FizzBuzzTests;
@@ -204,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DD68D422B64E1E006ACB82 /* FizzBuzzPresenter.swift in Sources */,
 				46DD68D022B64AC0006ACB82 /* FizzBuzzUseCase.swift in Sources */,
 				46DD68AD22B640C3006ACB82 /* ViewController.swift in Sources */,
 				46DD68AB22B640C3006ACB82 /* AppDelegate.swift in Sources */,
@@ -214,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DD68D222B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift in Sources */,
 				46DD68CB22B64529006ACB82 /* FizzBuzzViewControllerTests.swift in Sources */,
 				46DD68CE22B6490B006ACB82 /* FizzBuzzUseCaseTests.swift in Sources */,
 			);
