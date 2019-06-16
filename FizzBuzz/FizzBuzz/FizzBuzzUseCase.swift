@@ -37,7 +37,7 @@ public final class FizzBuzzUseCase {
         case value where value % 5 == 0:
             formattedValue = "Buzz"
         default:
-            formattedValue = "There are no Fizz, no Buzz, so no FizzBuzz too !"
+            formattedValue = "There are no Fizz, no Buzz, so no FizzBuzz!"
         }
         output.didCalcul(FizzBuzzData(value: formattedValue))
     }
