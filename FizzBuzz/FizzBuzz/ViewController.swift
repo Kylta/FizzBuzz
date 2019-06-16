@@ -8,13 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class FizzBuzzViewController: UIViewController {
+
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var reloadButton: UIButton!
+    @IBOutlet weak var textField: UITextField!
+
+    var reloaData: ((Double) -> Void)?
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        reload()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        reloaData?(Double(textField.text!)!)
     }
 
-
+    @IBAction private func reload() {
+        reloaData?(Double(textField.text!)!)
+    }
 }
 
