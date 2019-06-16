@@ -17,6 +17,7 @@
 		46DD68D022B64AC0006ACB82 /* FizzBuzzUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68CF22B64AC0006ACB82 /* FizzBuzzUseCase.swift */; };
 		46DD68D222B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68D122B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift */; };
 		46DD68D422B64E1E006ACB82 /* FizzBuzzPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68D322B64E1E006ACB82 /* FizzBuzzPresenter.swift */; };
+		46DD68D822B653F7006ACB82 /* AppdelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68D722B653F7006ACB82 /* AppdelegateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		46DD68CF22B64AC0006ACB82 /* FizzBuzzUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUseCase.swift; sourceTree = "<group>"; };
 		46DD68D122B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzDataPresenterTests.swift; sourceTree = "<group>"; };
 		46DD68D322B64E1E006ACB82 /* FizzBuzzPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzPresenter.swift; sourceTree = "<group>"; };
+		46DD68D722B653F7006ACB82 /* AppdelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppdelegateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				46DD68CD22B6490B006ACB82 /* FizzBuzzUseCaseTests.swift */,
 				46DD68D122B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift */,
 				46DD68CA22B64529006ACB82 /* FizzBuzzViewControllerTests.swift */,
+				46DD68D722B653F7006ACB82 /* AppdelegateTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DD68D822B653F7006ACB82 /* AppdelegateTests.swift in Sources */,
 				46DD68D222B64BA9006ACB82 /* FizzBuzzDataPresenterTests.swift in Sources */,
 				46DD68CB22B64529006ACB82 /* FizzBuzzViewControllerTests.swift in Sources */,
 				46DD68CE22B6490B006ACB82 /* FizzBuzzUseCaseTests.swift in Sources */,

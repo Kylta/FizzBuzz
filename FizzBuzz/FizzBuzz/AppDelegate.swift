@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        if let vc = window?.rootViewController as? FizzBuzzViewController {
+            let presenter = FizzBuzzPresenter(output: vc)
+            let fizzBuzzCalculate = CalculFizzBuzzUseCase(output: presenter)
+            vc.reloaData = fizzBuzzCalculate.calcul
+        }
+
         return true
     }
 
