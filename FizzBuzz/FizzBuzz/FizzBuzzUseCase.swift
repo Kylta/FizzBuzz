@@ -16,14 +16,14 @@ public struct FizzBuzzData {
     }
 }
 
-public protocol CalculFizzBuzzOutput {
+public protocol FizzBuzzOutput {
     func didCalcul(_ fizzBuzz: FizzBuzzData)
 }
 
-public final class CalculFizzBuzzUseCase {
-    private let output: CalculFizzBuzzOutput
+public final class FizzBuzzUseCase {
+    private let output: FizzBuzzOutput
 
-    public init(output: CalculFizzBuzzOutput) {
+    public init(output: FizzBuzzOutput) {
         self.output = output
     }
 

@@ -13,7 +13,7 @@ class FizzBuzzUseCaseTests: XCTestCase {
 
     func testCalculSendsFizzBuzzDataOutput() {
         let output = OutputSpy()
-        let sut = CalculFizzBuzzUseCase(output: output)
+        let sut = FizzBuzzUseCase(output: output)
 
         XCTAssertEqual(output.message.count, 0)
 
@@ -21,7 +21,7 @@ class FizzBuzzUseCaseTests: XCTestCase {
         XCTAssertEqual(output.message.count, 1)
     }
 
-    private class OutputSpy: CalculFizzBuzzOutput {
+    private class OutputSpy: FizzBuzzOutput {
         typealias Message = (FizzBuzzData)
 
         var message = [Message]()

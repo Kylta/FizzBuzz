@@ -20,7 +20,7 @@ public protocol FizzBuzzPresenterOutput {
     func present(_ fizzBuzz: FizzBuzzViewModel)
 }
 
-public final class FizzBuzzPresenter: CalculFizzBuzzOutput {
+public final class FizzBuzzPresenter: FizzBuzzOutput {
     private let output: FizzBuzzPresenterOutput
 
     public init(output: FizzBuzzPresenterOutput) {
