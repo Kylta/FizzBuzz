@@ -9,10 +9,10 @@
 import Foundation
 
 public struct FizzBuzzData {
-    public let value: Int
+    public let formattedValue: String
 
-    public init(value: Int) {
-        self.value = value
+    public init(value: String) {
+        self.formattedValue = value
     }
 }
 
@@ -28,6 +28,17 @@ public final class CalculFizzBuzzUseCase {
     }
 
     public func calcul(_ value: Int) {
-        output.didCalcul(FizzBuzzData(value: value))
+        var formattedValue = ""
+        switch value {
+        case value where value % 15 == 0:
+            formattedValue = "FizzBuzz"
+        case value where value % 3 == 0:
+            formattedValue = "Fizz"
+        case value where value % 5 == 0:
+            formattedValue = "Buzz"
+        default:
+            formattedValue = "There are no Fizz, no Buzz, so no FizzBuzz too !"
+        }
+        output.didCalcul(FizzBuzzData(value: formattedValue))
     }
 }

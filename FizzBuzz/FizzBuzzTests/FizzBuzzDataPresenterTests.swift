@@ -17,8 +17,8 @@ class FizzBuzzDataPresenterTests: XCTestCase {
 
         XCTAssertEqual(output.messages.count, 0)
 
-        sut.didCalcul(FizzBuzzData(value: 1))
-        XCTAssertEqual(output.messages, [FizzBuzzViewModel(value: "1")])
+        sut.didCalcul(FizzBuzzData(value: "Fizz"))
+        XCTAssertEqual(output.messages, [FizzBuzzViewModel(value: "Fizz")])
     }
 
     private class OutputSpy: FizzBuzzPresenterOutput {

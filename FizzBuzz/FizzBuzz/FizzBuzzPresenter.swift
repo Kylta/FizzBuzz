@@ -28,6 +28,6 @@ public final class FizzBuzzPresenter {
     }
 
     public func didCalcul(_ fizzBuzz: FizzBuzzData) {
-        output.present(FizzBuzzViewModel(value: String(fizzBuzz.value)))
+        output.present(FizzBuzzViewModel(value: fizzBuzz.formattedValue))
     }
 }
