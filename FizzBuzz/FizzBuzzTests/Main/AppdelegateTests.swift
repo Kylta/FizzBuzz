@@ -22,7 +22,7 @@ class AppDelegateTests: XCTestCase {
         XCTAssertNotNil(vc.reloadData)
     }
 
-    func testFizzBuzzViewControllerReloadDataShouldUpdateLabel() {
+    func testFizzBuzzViewControllerReloadDataShouldUpdateLabelWithFizzBuzz() {
         let vc = makeFizzBuzzViewController()
         let sut = makeSUT(withRoot: vc)
 
@@ -34,6 +34,48 @@ class AppDelegateTests: XCTestCase {
 
         XCTAssertNotEqual(vc.label.text, initialValue)
         XCTAssertEqual(vc.label.text, "FizzBuzz")
+    }
+
+    func testFizzBuzzViewControllerReloadDataShouldUpdateLabelWithFizz() {
+        let vc = makeFizzBuzzViewController()
+        let sut = makeSUT(withRoot: vc)
+
+        _ = sut.application(.shared, didFinishLaunchingWithOptions: [:])
+
+        let initialValue = vc.label.text
+
+        vc.reloadData?(3)
+
+        XCTAssertNotEqual(vc.label.text, initialValue)
+        XCTAssertEqual(vc.label.text, "Fizz")
+    }
+
+    func testFizzBuzzViewControllerReloadDataShouldUpdateLabelWithBuzz() {
+        let vc = makeFizzBuzzViewController()
+        let sut = makeSUT(withRoot: vc)
+
+        _ = sut.application(.shared, didFinishLaunchingWithOptions: [:])
+
+        let initialValue = vc.label.text
+
+        vc.reloadData?(5)
+
+        XCTAssertNotEqual(vc.label.text, initialValue)
+        XCTAssertEqual(vc.label.text, "Buzz")
+    }
+
+    func testFizzBuzzViewControllerReloadDataShouldUpdateLabelWithUnmatchNumber() {
+        let vc = makeFizzBuzzViewController()
+        let sut = makeSUT(withRoot: vc)
+
+        _ = sut.application(.shared, didFinishLaunchingWithOptions: [:])
+
+        let initialValue = vc.label.text
+
+        vc.reloadData?(2)
+
+        XCTAssertNotEqual(vc.label.text, initialValue)
+        XCTAssertEqual(vc.label.text, "There are no Fizz, no Buzz, so no FizzBuzz!")
     }
 
     private func makeSUT(withRoot vc: UIViewController) -> AppDelegate {
