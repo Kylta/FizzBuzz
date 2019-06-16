@@ -33,3 +33,8 @@ final class FizzBuzzViewController: UIViewController {
     }
 }
 
+extension FizzBuzzViewController: FizzBuzzPresenterOutput {
+    func present(_ fizzBuzz: FizzBuzzViewModel) {
+        label.text = fizzBuzz.value
+    }
+}

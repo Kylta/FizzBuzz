@@ -60,6 +60,14 @@ class FizzBuzzViewControllerTest: XCTestCase {
         XCTAssertEqual(callCount, 2)
     }
 
+    func testPresentFizzBuzzViewModelUpdatesLabel() {
+        let sut = makeSUT()
+
+        sut.present(FizzBuzzViewModel(value: "Fizz"))
+
+        XCTAssertEqual(sut.label.text, "Fizz")
+    }
+
     private func makeSUT() -> FizzBuzzViewController {
         let sut = sb.instantiateInitialViewController() as! FizzBuzzViewController
         sut.loadView()
