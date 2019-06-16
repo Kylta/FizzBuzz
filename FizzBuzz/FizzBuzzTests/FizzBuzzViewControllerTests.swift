@@ -34,7 +34,7 @@ class FizzBuzzViewControllerTest: XCTestCase {
         let sut = makeSUT()
 
         var callCount = 0
-        sut.reloaData = { _ in callCount += 1 }
+        sut.reloadData = { _ in callCount += 1 }
 
         XCTAssertEqual(callCount, 0)
 
@@ -49,7 +49,7 @@ class FizzBuzzViewControllerTest: XCTestCase {
         let sut = makeSUT()
 
         var callCount = 0
-        sut.reloaData = { _ in callCount += 1 }
+        sut.reloadData = { _ in callCount += 1 }
 
         XCTAssertEqual(callCount, 0)
 

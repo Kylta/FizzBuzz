@@ -15,11 +15,11 @@ class AppDelegateTests: XCTestCase {
         let vc = makeFizzBuzzViewController()
         let sut = makeSUT(withRoot: vc)
 
-        XCTAssertNil(vc.reloaData)
+        XCTAssertNil(vc.reloadData)
 
         _ = sut.application(.shared, didFinishLaunchingWithOptions: [:])
         
-        XCTAssertNotNil(vc.reloaData)
+        XCTAssertNotNil(vc.reloadData)
     }
 
     func testFizzBuzzViewControllerReloadDataShouldUpdateLabel() {
@@ -30,7 +30,7 @@ class AppDelegateTests: XCTestCase {
 
         let initialValue = vc.label.text
 
-        vc.reloaData?(15)
+        vc.reloadData?(15)
 
         XCTAssertNotEqual(vc.label.text, initialValue)
         XCTAssertEqual(vc.label.text, "FizzBuzz")

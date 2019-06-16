@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let vc = window?.rootViewController as? FizzBuzzViewController {
             let presenter = FizzBuzzPresenter(output: vc)
             let fizzBuzzCalculate = CalculFizzBuzzUseCase(output: presenter)
-            vc.reloaData = fizzBuzzCalculate.calcul
+            vc.reloadData = fizzBuzzCalculate.calcul
         }
 
         return true
