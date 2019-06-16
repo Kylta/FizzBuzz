@@ -14,7 +14,7 @@ final class FizzBuzzViewController: UIViewController {
     @IBOutlet weak var reloadButton: UIButton!
     @IBOutlet weak var textField: UITextField!
 
-    var reloaData: ((Double) -> Void)?
+    var reloaData: ((Int) -> Void)?
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -25,11 +25,11 @@ final class FizzBuzzViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        reloaData?(Double(textField.text!)!)
+        reloaData?(Int(textField.text!)!)
     }
 
     @IBAction private func reload() {
-        reloaData?(Double(textField.text!)!)
+        reloaData?(Int(textField.text!)!)
     }
 }
 
