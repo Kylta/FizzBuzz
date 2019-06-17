@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46B4965122B7846000048CE6 /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B4965022B7846000048CE6 /* WeakRef.swift */; };
 		46DD68AB22B640C3006ACB82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68AA22B640C3006ACB82 /* AppDelegate.swift */; };
 		46DD68AD22B640C3006ACB82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD68AC22B640C3006ACB82 /* ViewController.swift */; };
 		46DD68B022B640C3006ACB82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DD68AE22B640C3006ACB82 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46B4965022B7846000048CE6 /* WeakRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
 		46DD68A722B640C3006ACB82 /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DD68AA22B640C3006ACB82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46DD68AC22B640C3006ACB82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46B4964F22B7843700048CE6 /* Weak Ref */ = {
+			isa = PBXGroup;
+			children = (
+				46B4965022B7846000048CE6 /* WeakRef.swift */,
+			);
+			path = "Weak Ref";
+			sourceTree = "<group>";
+		};
 		46DD689E22B640C3006ACB82 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		46DD68A922B640C3006ACB82 /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
+				46B4964F22B7843700048CE6 /* Weak Ref */,
 				46DD68DC22B6629A006ACB82 /* Main */,
 				46DD68D922B66274006ACB82 /* UI */,
 				46DD68DA22B66288006ACB82 /* Business Logic */,
@@ -287,6 +298,7 @@
 			files = (
 				46DD68D422B64E1E006ACB82 /* FizzBuzzPresenter.swift in Sources */,
 				46DD68D022B64AC0006ACB82 /* FizzBuzzUseCase.swift in Sources */,
+				46B4965122B7846000048CE6 /* WeakRef.swift in Sources */,
 				46DD68AD22B640C3006ACB82 /* ViewController.swift in Sources */,
 				46DD68AB22B640C3006ACB82 /* AppDelegate.swift in Sources */,
 			);

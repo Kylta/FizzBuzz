@@ -86,7 +86,7 @@ class AppDelegateTests: XCTestCase {
         return sut
     }
 
-    private func makeFizzBuzzViewController() -> FizzBuzzViewController {
+    private func makeFizzBuzzViewController(file: StaticString = #file, line: UInt = #line) -> FizzBuzzViewController {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateInitialViewController() as! FizzBuzzViewController
         vc.loadViewIfNeeded()
@@ -96,9 +96,9 @@ class AppDelegateTests: XCTestCase {
 
 
 extension XCTestCase {
-    func trackMemoryLeaks(_ instance: AnyObject) {
+    func trackMemoryLeaks(_ instance: AnyObject, file: StaticString = #file, line: UInt = #line) {
         addTeardownBlock { [weak instance] in
-            XCTAssertNil(instance, "Instance should have been deallocated. Potential memory leaks")
+            XCTAssertNil(instance, "Instance should have been deallocated. Potential memory leaks", file: file, line: line)
         }
     }
 }

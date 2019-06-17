@@ -9,7 +9,6 @@
 import UIKit
 
 final class FizzBuzzViewController: UIViewController, FizzBuzzPresenterOutput {
-
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var reloadButton: UIButton!
     @IBOutlet weak var textField: UITextField!
