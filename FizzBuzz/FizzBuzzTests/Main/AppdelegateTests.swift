@@ -90,6 +90,7 @@ class AppDelegateTests: XCTestCase {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateInitialViewController() as! FizzBuzzViewController
         vc.loadViewIfNeeded()
+        trackMemoryLeaks(vc)
         return vc
     }
 }
